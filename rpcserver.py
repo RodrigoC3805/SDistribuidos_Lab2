@@ -16,7 +16,7 @@ def procesar(cadena):
     resultado.append(f"Cadena transformada: {cadena_transformada}")
     return '\n'.join(resultado)
 
-server = SimpleXMLRPCServer(("localhost", 12000))
+server = SimpleXMLRPCServer(("INGRESAR_IP_DEL_SERVIDOR", 12000))
 server.register_function(procesar, "procesar")
 
 server.serve_forever()
