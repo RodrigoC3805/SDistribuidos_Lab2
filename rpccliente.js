@@ -2,7 +2,7 @@ const xmlrpc = require("xmlrpc");
 const readline = require("readline");
 
 const client = xmlrpc.createClient({
-    host: "localhost",
+    host: "INGRESAR_IP_DEL_SERVIDOR",
     port: 12000,
     path: "/"
 });
