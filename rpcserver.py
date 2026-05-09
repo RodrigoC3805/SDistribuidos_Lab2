@@ -4,14 +4,11 @@ def procesar(cadena):
     resultado = []
     cadena_transformada = ""
     for caracter in cadena:
-        if caracter.isupper():
-            resultado.append(f"'{caracter}' es MAYÚSCULA")
-            cadena_transformada += caracter.lower()
-        elif caracter.islower():
-            resultado.append(f"'{caracter}' es minúscula")
+        if caracter.islower():
+            resultado.append(f"Caracter convertido")
             cadena_transformada += caracter.upper()
         else:
-            resultado.append(f"'{caracter}' no es letra")
+            resultado.append(f"Caracter NO convertido")
             cadena_transformada += caracter
     resultado.append(f"Cadena transformada: {cadena_transformada}")
     return '\n'.join(resultado)
